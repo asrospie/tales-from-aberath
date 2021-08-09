@@ -1,0 +1,32 @@
+.test {
+    border: 2px solid red;
+}
+
+body {
+    background-color: #222629;
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+}
+
+.top-nav a {
+    margin-right: .5em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.content {
+}
+
+.content a {
+    /* text-decoration: none; */
+    color: #86C232;
+}

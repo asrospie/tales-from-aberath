@@ -1,0 +1,29 @@
+{% load static %}
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="FastAPI Starter">
+    <meta name="author" content="Alec Rospierski">
+    <title>{% block title %}Aberath{% endblock %}</title>
+
+    <!-- Default Style Sheets -->
+    <link href="{% static 'blog/css/base.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet"> 
+
+    {% endblock %}
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            {% include 'blog/include/nav.html' %}
+            {% block content %}
+            {% endblock %}
+            {% include 'blog/include/footer.html' %}
+        </div>
+    </div>
+</body>
