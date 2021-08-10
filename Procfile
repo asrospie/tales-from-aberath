@@ -1,1 +1,1 @@
-web: gunicorn tales_from_abernath.wsgi
+web: gunicorn --pythonpath tales_from_aberath tales_from_aberath.wsgi
