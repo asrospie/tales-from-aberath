@@ -1,1 +1,1 @@
-web: gunicorn tales_from_abernath/tales_from_abernath.wsgi
+web: gunicorn tales_from_abernath.wsgi
