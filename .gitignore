@@ -131,3 +131,4 @@ dmypy.json
 # mac
 *.DS_Store
 */latest.dump
+gather_prod_data.py
