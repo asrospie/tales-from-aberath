@@ -1,6 +1,15 @@
 {% extends 'blog/base.html' %}
+{% load blog_extras %}
 
 {% block content %}
-<h1>blog</h1>
-
+<br>
+{% post_list posts %}
+<br>
+<nav>
+{% for tag in tags %}
+    <a href="/blog/search/?q={{ tag }}">#{{ tag }}</a>
+{% empty %}
+    No tags found.
+{% endfor %}
+</nav>
 {% endblock %}

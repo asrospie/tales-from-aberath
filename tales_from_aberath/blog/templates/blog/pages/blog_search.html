@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+{% load blog_extras %}
+
+{% block content %}
+<h3>Filtering for <i>#{{ tag }}</i></h3>
+<a href="/blog">Remove filter</a>
+{% post_list posts %}

@@ -1,11 +1,26 @@
 {% extends 'blog/base.html' %}
+{% load blog_extras %}
 
 {% block content %}
 
-<h1>Hello There</h1>
+<h1>Welcome to Aberath!</h1>
 
-<h3>General Kenobi</h3>
+<p>
+    Tales from the <i>Coworkers</i>, adventuring in the world of Abernath. 
+</p>
+<p>
+    The cast:
+    <ul>
+        <li><i>Dungeon Master</i> - Nick</li>
+        <li><i>Fivin</i> - Alec</li>
+        <li><i>Malus</i> - Max</li>
+        <li><i>Matthias</i> - TJ</li>
+        <li><i>Kyburn</i> - Alex</li>
+        <li><i>Zan</i> - Yosef</li>
+    </ul>
+</p>
 
-<p>{{ test }}</p>
+<h3>Recent Posts:</h3>
+{% post_list posts %}
 
 {% endblock %}

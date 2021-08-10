@@ -1,0 +1,7 @@
+<ul style="list-style-type: none; padding-left: 0;">
+{% for post in posts %}
+    <li><i>{{ post.pub_date | date:"F d, Y" }}</i> - <a href="/blog/post/{{ post.permalink }}">{{ post.title }}</a></li>
+{% empty %}
+    <p>No posts found.</p>
+{% endfor %}
+</ul>

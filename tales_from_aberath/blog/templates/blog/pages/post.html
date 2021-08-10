@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% load blog_extras %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p><i>Created on {{ pub_date | date:"F d, Y" }} by {{ author }}</i></p>
+--
+{{ content | markdown | safe }}
+{% endblock %}
