@@ -30,7 +30,6 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') 
-SECURE_SSL_REDIRECT = not os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -56,6 +55,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = not os.environ.get('DEBUG')
 
 ROOT_URLCONF = 'tales_from_aberath.urls'
 
