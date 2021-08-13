@@ -30,6 +30,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') 
+SECURE_SSL_REDIRECT = not os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = []
 
