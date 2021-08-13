@@ -1,5 +1,25 @@
 .test {
-    border: 2px solid red;
+    border: 2px solid blue;
+}
+
+.map-img {
+    cursor: move;
+    /* height: auto; */
+    /* width: auto; */
+    /* max-width: 50em; */
+    /* max-height: 50em; */
+    scale: .4;
+    position: relative;
+}
+
+.map-container {
+    height: auto;
+    width: auto;
+    /* max-width: 1779px; */
+    /* max-height: 1187px; */
+    overflow: hidden;
+    border: 2px solid #86C232;
+    /* overflow: scroll; */
 }
 
 .no-dec {

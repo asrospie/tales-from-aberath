@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<br><br>
+
+<script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
+
+<div class="map-container">
+    <svg id="map" height="475px" width="710px" overflow="visible" >
+        <image class="map-img" href="{% static 'blog/img/aberath_map.png' %}" >
+    </svg>
+</div>
+
+<script>
+    let map = document.getElementById('map');
+    panzoom(map);
+</script>
+{% endblock %}
